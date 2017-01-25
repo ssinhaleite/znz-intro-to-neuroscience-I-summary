@@ -1,0 +1,99 @@
+\documentclass[11pt,article,oneside,a4paper]{memoir}
+
+%% Packages
+%% ========
+
+%% many common packages
+\input{commonpackages}
+
+%% Some more packages that you may want to use.  Have a look at the
+%% file, and consult the package docs for each.
+\input{extrapackages}
+
+%% Our layout configuration.
+\input{layoutsetup}
+
+%% Theorem environments.  You will have to adapt this for a German
+%% thesis.
+\input{theoremsetup}
+
+%% Helpful macros.
+\input{macrosetup}
+
+%%page layout settings and listing templates etc.
+\input{settings}
+
+\title{\textbf{ZNZ HS16 Introduction to Neuroscience I} \\
+       Fall 2016\\\normalsize version 1.0}
+
+\author{
+	Vanessa Leite
+	\vspace{2em}
+	\\Repository page: \url{https://github.com/ssinhaleite/znz-intro-to-neuroscience-I-summary}\\
+	Contact \href{mailto:vrcleite@gmail.com}{vrcleite@gmail.com} if you have any questions.}
+	\thesistype{The Summary of the lectures in 2016}
+	\department{ZNZ - Institute of Neuroinformatics, ETH}
+	\date{\today}
+
+\begin{document}
+\frontmatter
+
+
+%% DO NOT CHANGE.
+\begin{titlingpage}
+  \calccentering{\unitlength}
+  \begin{adjustwidth*}{\unitlength-24pt}{-\unitlength-24pt}
+    \maketitle
+  \end{adjustwidth*}
+\end{titlingpage}
+
+\mainmatter
+
+%% This change is needed if the article option for the memoir document class
+%% is used, in order to count sections (article) as if they were chapters (memoir)
+\counterwithout{section}{chapter}
+
+%% Our content
+
+\newpage
+\clearpage
+\pagenumbering{roman}
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{2}
+\tableofcontents
+
+\clearpage
+\pagenumbering{arabic}
+
+\newpage
+
+\section{Human \& Comparative Neuroanatomy}
+\subsection{Introduction}
+\subsection{Human Neuroanatomy}
+\subsection{Comparative Neuroanatomy}
+
+
+\section{Molecular \& Cellular Neuroscience}
+\subsection{Building a central nervous system}
+\subsection{Excitability}
+\subsection{Glia and more}
+\subsection{Synapses}
+
+\section{Systems Neuroscience}
+\subsection{Somatosensory and Motor Systems}
+\subsection{Visual System}
+\subsection{Auditory \& Vestibular System}
+\subsection{Circuits underlying Emotion}
+\subsection{Learning in artificial and biological neural networks}
+
+\newpage
+
+\subsection{References}
+The pictures used in this summary are from the following books and slide sets
+and belong to their respective owners. In the context of the summary they are
+used for educational purposes only.
+\begin{itemize}
+\item
+\item
+\end{itemize}
+\end{document}

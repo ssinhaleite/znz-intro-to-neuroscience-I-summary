@@ -1,9 +1,17 @@
-\documentclass[11pt,article,oneside,a4paper]{memoir}
+\documentclass[12pt,article,oneside,a4paper]{memoir}
 
 %% Packages
 %% ========
-
 \usepackage{graphicx}
+\usepackage{titlesec}
+\usepackage{wrapfig}
+
+\setcounter{secnumdepth}{4}
+
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
 
 %% many common packages
 \input{commonpackages}
@@ -71,9 +79,19 @@
 
 \section{Human \& Comparative Neuroanatomy}
 \subsection{Human Neuroanatomy}
+\subsubsection{Why do we need to know the brain}
+The famous case of the HM pacient: Henry Gustav Molaison went through a surgery on brain to cure his epilepsy. However, during the surgery two holes were drilled in the front of his skull and a portion of his brain, the front half of the hippocampus on both sides, and most of the almond-shaped amygdala, was sucked out. The procedure went badly wrong and Henry, then aged 27, was left with no ability to store or retrieve new experiences. He lived the subsequent 55 years of his life, until his death in 2008, in the permanent present moment.
+
 \subsubsection{Nervous system}
 The nervous system is divided in two parts: the Central Nervous System (CNS) and
-the Peripheral Nervous System (PNS).
+the Peripheral Nervous System (PNS). Each part has its own divisions as we can see in Figure \ref{fig:nervousSystem}.
+
+\begin{figure}
+  \includegraphics[width=\linewidth]{imgs/division_nervous_system.jpg}
+  \caption{Division of the Nervous System}
+  \label{fig:nervousSystem}
+\end{figure}
+
 \begin{itemize}
 \item CNS
 \subitem Brain
@@ -92,23 +110,148 @@ In the CNS the gray matter is divided in:
 \item Centers - collection of neuron cell bodies in CNS, each center has specific processing functions
 \item High centers - the most complex centers in brain.
 \end{itemize}
-The white matter in CNS is divided in two parts: the {tracts}: bundle of CNS axons
-that share a common origin and destination -, and the {columns}: several tracts
-that form an anatomically distinct mass
+The white matter in CNS is divided in two parts: the \textbf{tracts or fasciculus}: bundle of CNS axons
+that share a common origin and destination -, and the \textbf{columns or funiculus}: several tracts (fasciculi) that form an anatomically distinct mass
 
 The centers and tracts that connect the brain with other organs and system in
 the body are called \textbf{pathways}. The ascending (sensory) pathway is called afferent.
 The descending (motor) pathway is called efferent.
 
+Figure \ref{fig:brain} shows the macro division of the brain (Telencephalon, Diencephalon, Brain stem and Medulla spinallis), in \ref{fig:brain2} we can see some views of the brain.
+
 \begin{figure}
   \includegraphics[width=\linewidth]{imgs/viewsOfTheBrain.png}
-  \caption{Views of the Brain}
+  \caption{Division of the brain}
   \label{fig:brain}
 \end{figure}
 
-Figure \ref{fig:brain} shows some views of the brain.
+\begin{figure}
+  \includegraphics[width=\linewidth]{imgs/viewsOfTheBrain2.png}
+  \caption{Views of the Brain}
+  \label{fig:brain2}
+\end{figure}
+
+\paragraph{Telencephalon - or Forebrain}
+The telencephalon (the biggest part of the brain) is divided in lobes, functional cortical areas, basal ganglia and limbic system.
+
+The four lobes (frontal, occitopital, temporal and parietal) are presented in Figure \ref{fig:boundaries}.
+
+\subparagraph{Gray matter}
+The macroscopic boundaries of the gray matter are Gyri, Sulci and Commissural fiber tracts. Each one is divided as follows:
+\begin{itemize}
+\item Gyri
+\subitem precentral gyrus
+\subitem postcentral gyrus
+\subitem pars triangularis
+\subitem angular gyrus
+\subitem cingulate gyrus
+\subitem parahippocampal gyrus
+\item Sulci
+\subitem central sulcus
+\subitem lateral fissure
+\subitem parieto-occipital sulcus
+\subitem calcarine sulcus
+\item Commissural fiber tracts
+\subitem corpus callosum
+\subsubitem Rostrum
+\subsubitem Genu
+\subsubitem Truncus
+\subsubitem Splenium
+\subitem anterior commissure
+\end{itemize}
+
+Figure \ref{fig:boundaries} shows the macroscopic boundaries of the gray matter. Besides the anatomical division, there is a functional division of the brain, where each area in the cerebral cortex has specific functional activities. The Wernicke's (language comprehension) and Broca's (speech production) areas are highlited in Figure \ref{fig:functionalBoundaries}.
+
+In 1909 Korbinian Brodmann described areas of the cerebral cortex on the basis of
+cytoarchitectural criteria. Areas differ in celltypes, layering and cell distribution, resulting in 52 Brodman Areas.
+
+The human brain is gyrencephalic, i.e, is formed by giri, as the elephant brain. However other species can be  lissencephalic (the brain is smooth, without giri) as the domestic rabbit and the house mouse. Defects in the neuronal migration during early to mid gestation (12th to 24th weeks) leading to impaired development of gyri and sulci.
+
+\begin{figure}
+  \includegraphics[width=\linewidth]{imgs/macroscopic_boundaries.png}
+  \caption{Macroscopic Boundaries - gray matter of the cortex}
+  \label{fig:boundaries}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=12cm]{imgs/functional_boundaries.png}
+  \caption{Functional Division - gray matter of the cortex}
+  \label{fig:functionalBoundaries}
+\end{figure}
+
+\newpage
+
+\subparagraph{White matter}
+
+\begin{wrapfigure}[11]{r}{0.5\textwidth}
+	\centering
+  	\includegraphics[width=5cm]{imgs/macroscopic_whiteMatter.png}
+	\caption{White matter - macroscopic fibers}
+  	\label{fig:macroscopic_whiteMatter}
+\end{wrapfigure}
+
+The white matter can be divided macroscopically and microscopically. Macroscopically we talk about fibers and microscopically we talk about cells. Figure \ref{fig:macroscopic_whiteMatter} exemplify the macroscopic division and Figure \ref{fig:microscopic_whiteMatter} exemplify the microscopic division, where we can see microglias, astrocyte and oligodendrocytes cells.
+
+\begin{itemize}
+\item Comissural fibers (red): link areas between the two hemispheres (corpus callosum, anterior commissure, posterior commissure)
+\item Association fibers (green): link cortical areas of the same hemisphere.
+\item Projecting fibers (blue): link the cortex with subcortical areas of the brain and the spinal cord.
+\end{itemize}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=12cm]{imgs/microscopic_whiteMatter.png}
+  \caption{White Matter - microscopic structures}
+  \label{fig:microscopic_whiteMatter}
+\end{figure}
+
+\subparagraph{Basal Ganglia}
+
+The basal ganglia are the principal subcortical components of a family of neuronal circuits which link the thalamus and cerebral cortex. It is crucial for the initiation and modulation of voluntary movement by sending their output to the motor cortex via the thalamus. In addition, the basal ganglia also contribute to a variety of behavioral and cognitive functions other than voluntary movement.
+
+The basal ganglia is divided in:
+\begin{itemize}
+\item Striatum: is the major recipient of inputs from the substantia nigra, cerebral cortex, thalamus, and brain stem. In humans (and most primates) consist of the caudate nucleus, the putamen, and the nucleus accumbens. In rats and mices consist of caudate putamen (human caudate nucleus + putamen) and nucleus accumbens.
+\item Globus Palidus: is divided into external and internal segments.
+\subitem The internal segment (GPi) sends projections to the thalamus and pedunculopontine nucleus (a group of cells located in the brain stem).
+\subitem The external segment (GPe) sends projections to the internal segment of the globus pallidus and to the subthalamic nucleus.
+\item Susbtantia Nigra: is a midbrain (mesencephalon) structure and contains a dense population of dopamine cells. The substantia nigra can be subdivided into substantia nigra pars compacta and pars reticulata.
+\end{itemize}
+
+One of the disorders of the basal ganglia is the parkinson's disease, where the
+dopaminergic cells in the substantia nigra pars compacta are lost, it impairs motor skills, speech and other functions.
+
+\subparagraph{Limbic system}
+Divided in cingulate gyrus (superior portion of limbic lobe), parahippocampal gyrus (inferior portion of limbic lobe), hippocampus and amigdalar complex.
+In Alzheimer's disease, the hippocampus is one of the first regions of the brain to suffer damage; memory problems (especially spatial memories) and disorientation appear among the first symptoms. People with extensive, bilateral hippocampal damage (such as in patients with progressed AD) may experience anterograde amnesia (the inability to form or retain new memories).
+The amigdala is envolved in emotions.
+
+\paragraph{Diencephalon}
+The diencephalon is divided in thalamus, hipothalamus, epithalamus, subthalamus
+
+\subparagraph{Thalamus}
+The thalamus is the gatekeeper of the brain: it is important for the transfer of information from the periphery to sensory processing regions in the telencephalon. It has important gating (filtering) functions: it determines whether sensory information reaches conscious awareness in the neocortex and participates in the integration of motor information from the cerebellum and basal ganglia and transmits this information to cerebral areas concerned with movement.
+
+\subparagraph{Hipothalamus}
+The hipothalamus regulates several behaviors that are essential for homeostasis
+and reproduction: growth, eating, drinking and maternal behavior, by regulating hormonal secretions from the pituitary gland. It is an important control center for the autonomic nervous system and for the hypothalamus-pituitary-adrenal (HPA) stress-response system.
+
+\subparagraph{Neuroendocrinollogy of Hipothalamus}
+\begin{enumerate}
+\item Hipothalamus produces releasing hormones (rh) and inhibiting hormones (ih) that directly influence anterior pituitary hormone secretion.
+\item Hipothalamus produces two hormones (oxytocin and antidiuretic hormone) that are stored in the posterior pituitary.
+\item Hupothalamus overseesthe ANS (?)thereby helping to stimulate the adrenal medulla via sympathetic innervation.
+\end{enumerate}
+
+\subparagraph{Epithalamus}
+epithelial roof of the third ventricle, habenula, pineal body and afferent/efferent connections. It is responsible for the secretion of melatonin, regulation of day-night cycles, information processing related to olfaction.
+
+\subparagraph{Subthalamus}
+It is the continuation of the tegmentum. Functionally part of the basal ganglia (motor control).
 
 \subsection{Comparative Neuroanatomy}
+
 \section{Molecular \& Cellular Neuroscience}
 \subsection{Building a central nervous system}
 \subsection{Excitability}
@@ -124,12 +267,159 @@ Figure \ref{fig:brain} shows some views of the brain.
 
 \newpage
 
-\subsection{References}
-The pictures used in this summary are from the following books and slide sets
-and belong to their respective owners. In the context of the summary they are
+\section{Previous Exams}
+Note this answers were provided by students and were not verified by a teacher. Use them at your own risk.
+
+\subsection{2011}
+
+\paragraph{Q1. Discuss the functions and structures of the hypothalamus as
+discussed in the lecture material. Label 18 structures in 2 different coronal slices}
+\paragraph{2. Developement: Describe how DRG sensory neurons development in comparison to motor neurons. How are cell boundaries formed in general and among the specific motor/sensory nerves}
+\paragraph{Q3. Axon Guidance: what were sperry's findings that support the chemoaffinity
+hypothesis. What molecules are involved in this and how do they function.}
+\paragraph{Q4. Describe from how sound is encoded neurally (from entering the ear
+to being perceived as sound in brain - complete pathway)}
+\paragraph{Q5. Draw a flowchart for a typical neuroproteomics experiment}
+\paragraph{Q6. Fill in the blank and multiple choice questions from Tobi's lecture: Who invented the term Neuro Engeneering? What is CMOS? Power consumption of brain. Synchronous logic is ubiquitous slide know physiologists friend photodiodes - how they are similar to retina CARVER MEAD}
+
+
+\subsection{2010}
+\paragraph{Q1. Auditory pathway}
+\paragraph{Q2. Development of CNS and PNS}
+\paragraph{Q3. Boundary building (one slide, different cell type)}
+\paragraph{Q4. Pathfinding (Chemoaffinity, give 2 examples)}
+\paragraph{Q5. Anatomy (hypothalamus, position and function)}
+\paragraph{Q6. Neuromorphic engineering}
+
+\subsection{2009}
+\paragraph{Q1. Neuroanatomy: which of the 12 cranial nerves origin and/or end in the brainstem? What are their respective sensory, motor and /or vegetative functions ?(please describe in detail) Which nuclei of the cranial nerves are located in the mesencephalon?}
+\paragraph{Q2. Auditory system: Describe differences between "conductive hearing loss" and "sensorineural hearing loss". Describe the classical test which is often used to determine between both forms of hearing loss. Describe biological causes and current tratments aids for such hearing impairments.}
+\paragraph{Q3. Proteomics in neuroscience:}
+\subparagraph{a. explain the term "proteome"}
+\subparagraph{b. what are the benefits of measuring the proteome in addition to the genome?}
+\subparagraph{c. Describe what a mass spectrometry is doing in principle.}
+\subparagraph{d. How would you quantify proteins in a proteomic experiment? Please name and describe at least 2 proteomics technologies}
+\subparagraph{e. Why is the proteome more complex compared to genome? Name and describe 3 reasons.}
+\paragraph{Q4. Ion channels: What are the principal functions of dendrites, axon and nerves endings in the transcription of signals through the nervous system? Which types of ion channels are critical for the function of each of these 3 structures? Provide specific examples.}
+\paragraph{Q5. Neural network: Explain the temporal and spatial network definition. Give an example for each network definition and describe how you can detect these networks in the brain.}
+\paragraph{Q6. Neuromorphic engineering: Considering organizing principles used in biological retina explain (...)}
+
+\subsection{2008?}
+\paragraph{Q1. Describe the diencephalon and its major components according to the text "the brain in a nutshell"}
+\paragraph{Q2. Compare structure and development of the cerebellum and the cortex}
+\paragraph{Q3. What evidence did Sperry find that supports his chemoaffinnity hypothesis? Have Sperrys proposed "recognition molecules" been found? If yes name one example and describe what properties of this molecyles support its role as a recognition molecule}
+\paragraph{Q4. Describe the structure of a voltage potassium channel. Explain the mechanisms that make the channel selective for only potassium ions.}
+\paragraph{Q5. Describe three functional properties of neurons in v1 that are absent in the LGN. For each property describe in detail an experiment that illustrates it including the type of stimulus and the observed neural responses. Finally, choose one of these three properties and explain as presisely as possible how it can emerg at the cortical level.}
+\paragraph{Q6. Which dynamic processes occur in single neuron and the local neural circuit during signal flow through a neural network? Name critical structural and functional aspects and discuss how they can be measured experimentally}
+
+\subsection{2007}
+
+\paragraph{Q1. Label each part of the brain, two coronal section, 18 areas. Describe the lobes of cortex, according to the handout}
+\paragraph{Q2. Development. Compare the cell migration to form the cortex and the migration in the peripheral neural system forming…}
+\paragraph{Q3. Development. About neurotrophic factor. What’s the experiment led to the finding of neurotrophic factor? Compare trophic and tropic factor.}
+\paragraph{Q4. What’s the difference between ionotropic and metabotropic receptors?}
+\paragraph{Q5. serotonin}
+\paragraph{Q6. insect eye}
+
+\subsection{2006}
+\paragraph{Q1. Label each part of the brain.Describe the components of midbrain according to the description in the shells of the brain}
+\paragraph{Q2. Why the ion channel is selective to a ion with particular polarity, e.g. why the positive channel allows cations going through? List different ion channels in different part of the neuron: (1) axon, (2) axon terminal and (3) postsynaptic membrane}
+\paragraph{Q3. How does cells differentiate in neural tube? How does cells differentiate in peripheral nervous system?}
+\paragraph{Q4. What is the structure and function of myelinated nerve in PNS?}
+\paragraph{Q5. Describe the structure and function of dopaminergic systems, the relation between the systems and psychology and neuropharmacology}
+\paragraph{Q6. Visual system: describe the two columns in V1, and give out the definitions of them. What is the relation between this two columns and also between them and other part of visual system. Give out one experiment for testing of each column.}
+
+
+\subsection{2005}
+\paragraph{Q1. Draw the connectivity between motor cortex, thalamus, basal ganglia and cerebellum for motor control and show which connections are excitatory or inhibitory - Coronal view to fill with 16 names}
+
+\paragraph{Q2. Model organisms for understanding human brain development and function. Give three general advantages of these models. Compare in a table with advantages and disadvantages the models: Drosophila, C. Elegans, Zebrafish, Mouse. Give an example for each of how it helped understand the brain}
+
+\paragraph{Q3. Two main route for cell death, detail differences}
+
+\paragraph{Q4. Myelin: structure and function}
+
+\paragraph{Q5. What are the two main modes of electrophysiological communication between neurons? Describe structure.}
+
+\paragraph{Q6. Vision:}
+\subparagraph{A. cites six roles for vision in insects}
+\subparagraph{B. 1. what structural/functional differences between insect and human eyes 2. in what experiments are insects eyes worse or better than human eyes? 3. five share important features of insect and human eyes}
+\subparagraph{C. 1. what is flow field? 2. draw the flow field perceived by a fly flying straight in a long corridor 3. what is ... field? ( i forgot the name oops) 4. draw pure rotation force field and its matched field filter}
+
+
+\subsection{2004}
+Some questions (especially number 6) are about subject not taught anymore
+during the first ZNZ introduction semester, so don't worry about them.
+
+\paragraph{Q1. Describe the major formations involving the hippocampus in the associative cortex. Coronal slices, 16 areas to be labelled}
+\paragraph{Q2. Structure and role of myelinating cells in the adult nervous system.}
+\paragraph{Q3. Name some crucial functions of Neurotrophic factors.}
+\paragraph{Q4. How is information transported in the nervous system? Explain features and function.}
+\paragraph{Q5. In verterbrates the vision system has some special wiring pattern. What's special about it (as in, how is it different to olfaction)? Explain biological/physiological means in the development of vision.}
+\paragraph{Q6. Imagine year 2020. Human genomics has advanced to the point where you not only can choose the gender and hair color of your child, but also apply specific changes to the visual system. Name 6 changes to the human visual system you would apply to your kid. Explain why you chose them and what physiological implications they would have.}
+
+\subsection{All Question - topics}
+\subsubsection{Cytology}
+\paragraph{Q1. What is the structure and function of a myelinated peripheral nerve?}
+\paragraph{Q2. Myelin : structure and function}
+\paragraph{Q3. Structure and role of myelinating cells in the adult nervous system.}
+
+\subsubsection{Anatomy}
+\paragraph{Q1. Describe the major formations involving the hippocampus in the associative cortex.}
+\paragraph{Q2. Label 2 coronal slices, 16 areas to be labelled (twice)}
+\paragraph{Q3. Mesencephalon: components \& nuclei (brain in a nutshell)}
+\paragraph{Q4. Motor activity structures and fibres}
+\paragraph{Q5. Output structures and structures modulating output}
+\paragraph{Q6. Draw the connectivity between motor cortex, thalamus, basal ganglia and cerebellum for motor control and show which connections are excitatory or inhibitory}
+\paragraph{Q8. Describe the diencephalon and ist major components}
+
+\subsubsection{Development}
+\paragraph{Q1. Name some crucial functions of Neurotrophic factors.}
+\paragraph{Q2. How do different types of neurons differentiate in the neural tube?}
+\paragraph{Q3. How do different types of neurons differentiate in the periphery?}
+\paragraph{Q4. Example for migration}
+\paragraph{Q5. Compare in a table with advantages and disadvantages the models: Drosophila, C. Elegans, Zebrafish, Mouse. Give an example for each of how it helped understand the brain}
+\paragraph{Q6. Compare structure and development of the cerebellum and the cortex}
+\paragraph{Q7. What evidence did Sperry find that supports his chemoaffinity hypothesis?}
+\paragraph{Q8. Have Sperry’s proposed recognition molecules been found? If yes, name one example and describe what properties of this molecule supports it’s role as a recognition molecule.}
+
+\subsubsection{Synaptogenesis}
+\paragraph{Q1. Two main routes for cell death, detail differences}
+
+\subsubsection{Ion Channel}
+\paragraph{Q1. Why is the ion channel selective to an ion with particular polarity, e.g. why the positive channel allows cations going through? List different ion channels in different part of the neuron: (1) axon, (2) axon terminal and (3) postsynaptic membrane}
+\paragraph{Q2. Describe the structure of a voltage-gated potassium channel. Explain the mechanisms that make the channel selective for only potassium ions.}
+
+\subsubsection{Synaptic Transmission}
+\paragraph{Q1. How is information transported in the nervous system? Explain features and function.}
+\paragraph{Q2. Structural selectivity feature allowing cationic channel to conduct positive but not negative ions}
+\paragraph{Q3. Transmission of neuronal signals -> list ion channels critical for i) Axons ii) Dendrites -> difference excitatory, inhibitory and iii) Nerve Terminals}
+\paragraph{Q4. Function of AP, resting potential, synaptic potential channels for all these potentials}
+\paragraph{Q5. What are the two main modes of electrophysiological communication between neurons? Describe structure.}
+
+\subsubsection{Visual System}
+\paragraph{Q1. Describe the two columns in V1, and give out the definitions of them. What is the relation between this two columns and also between them and other part of visual system. give out one experiment for testing of each column.}
+\paragraph{Q2. Describe three functional properties of neurons in area V1 that are absent in the Lateral Geniculate Nucleus. For each property describe in detail an experiment that illustrates it, including the type of stimulus and the observed neuronal responses. Finally, choose one these three properties and explain as precisely as possible how it can emerge at the cortical level.}
+\paragraph{Q3. In verterbrates the vision system has some special wiring pattern.
+What's special about it (as in, how is it different to olfaction)? Explain biological/physiological meansin the development of vision.}
+\paragraph{Q4. Imagine year 2020. Human genomics has advanced to the point where you
+not only can choose the gender and hair color of your child, but also apply specific
+changes to the visual system. Name 6 changes to the human visual system you would apply to your kid. Explain why you chose them and what physiological implications they would have.}
+
+\subsubsection{Neuromorphic engineering}
+
+\paragraph{Q1. Differences in organising principle between electronic and neural computation}
+\paragraph{Q2. Illustrate neural computation principles by specific examples (e.g. retina), explain functional utility}
+
+\subsubsection{Neural networks in vivo}
+\paragraph{Q1. Which dynamic process occur in single neurons and the local neural circuit during signal flow through a neuronal network? Name critical structural and functional aspects and discuss how they can be measured experimentally.}
+
+\subsubsection{Neural computation}
+\paragraph{Q1. Fill in the blank and multiple choice questions from Tobi's lecture: Who invented the term Neuro Engeneering? What is CMOS? Power consumption of brain. Synchronous logic is ubiquitous slide know physiologists friend photodiodes - how they are similar to retina CARVER MEAD}
+
+\newpage
+
+\section{References}
+The pictures used in this summary are from the class slide sets and belong to their respective owners. In the context of the summary they are
 used for educational purposes only.
-\begin{itemize}
-\item
-\item
-\end{itemize}
 \end{document}
